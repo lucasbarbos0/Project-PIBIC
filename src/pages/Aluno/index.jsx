@@ -136,7 +136,7 @@ const Aluno = () => {
 
 const login = async (matricula) => {
   const responseAluno = await fetch(
-    'http://3.144.79.84:3000/alunos'
+    'https://pibicdb.onrender.com/alunos'
   ).then((res) => res.json());
 
   const aluno = responseAluno.find((aluno) => aluno.matricula === matricula);
